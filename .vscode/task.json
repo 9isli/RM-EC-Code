@@ -1,0 +1,26 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "OpenOCD Flash",
+      "type": "shell",
+      "command": "openocd",
+      "args": [
+        "-f",
+        "openocd_daplink.cfg",
+        "-c",
+        "program F:/STM32HAL/F407IGH6TR/zqu-robo-master-ec-code/build/Debug/RoboMaster_C.elf verify reset exit"
+      ],
+      "group": {
+        "kind": "test",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "always",
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "configurations": [
+    {
+      "name": "DapLink",
+      "cwd": "${workspaceFolder}",
+      "executable": "build/RoboMaster_C.elf",
+      "request": "launch",
+      "type": "cortex-debug",
+      "servertype": "openocd",
+      "configFiles": [
+        "interface/cmsis-dap.cfg",
+        "target/stm32f4x.cfg"
+      ]
+    }
+  ]
+}
